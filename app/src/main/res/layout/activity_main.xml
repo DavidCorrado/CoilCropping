@@ -6,14 +6,28 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/articleHeaderImage"
+        android:id="@+id/cardBackgroundImageView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:contentDescription="@null"
-        app:layout_constraintDimensionRatio="3:2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="5:4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:background="#0289A0" />
-
+        app:layout_constraintVertical_bias="0.0"
+        android:background="#0289A0" />
+    <ImageView
+        android:id="@+id/cardBackgroundImageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="5:4"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardBackgroundImageView"
+        app:layout_constraintVertical_bias="0.0"
+        android:background="#0289A0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
